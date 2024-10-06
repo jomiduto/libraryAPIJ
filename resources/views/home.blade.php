@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Librería AIPJ')
+@section('title', 'Biblioteca AIPJ | Asociación Iberoamericana de Psicología Jurídica')
 
 @section('head', 'Acá va el menú')
 
