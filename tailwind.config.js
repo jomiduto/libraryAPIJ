@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+        'dm-sans': 'DM Sans',
+        'sora': 'Sora',
+    },
+    colors: {
+        'primary': '#EB7474',
+        'secondary': '#3C3C3C',
+        'text': '#FFFFFF',
+    },
   },
   plugins: [],
 }
