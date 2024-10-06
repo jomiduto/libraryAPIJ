@@ -5,8 +5,10 @@
 @section('head', 'Acá va el menú')
 
 @section('content')
-    <h2>Contenido</h2>
-    <p>content</p>
+    <h1 class="text-3xl font-extrabold underline">
+        Hello world!
+    </h1>
+    <p class="bg-indigo-500 text-yellow-100">content</p>
 @endsection
 
 @section('footer', 'Acá va el footer')
