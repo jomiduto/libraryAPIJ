@@ -10,9 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
 </head>
-<body>
-    <header>
-        <h1>@yield('head')</h1>
+<body class="m-0 p-0 bg-white">
+    <header class="flex items-center bg-[#F8F8F8] pt-3 pr-5 justify-between border-b-[#ddd]">
+        <div class="h-12">
+            <img src="#" alt="Logo AIPJ">
+        </div>
+        <nav>
+            <ul class="flex m-0 p-0 list-none gap-4">
+                <li class="inline">
+                    <a class="text-primary font-bold hover:text-secondary underline" href="#">Inicio</a>
+                    <a class="text-primary font-bold hover:text-secondary underline" href="#">Quiénes somos</a>
+                    <a class="text-primary font-bold hover:text-secondary underline" href="#">Eventos</a>
+                    <a class="text-primary font-bold hover:text-secondary underline" href="#">Asociados</a>
+                    <a class="text-primary font-bold hover:text-secondary underline" href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <div class="container">
