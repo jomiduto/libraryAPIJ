@@ -12,7 +12,7 @@
 </head>
 <body class="min-h-screen flex flex-col p-0 m-0">
     <header>
-        <div class="container flex flex-row w-8/12 mx-auto">
+        <div class="container flex flex-row mx-auto">
             <div class="flex-1" id="logo">
                 <img class="h-20" src="./img/ID-Siglas-Color.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica">
             </div>
@@ -32,7 +32,8 @@
         @yield('content')
     </div>
 
-    <footer class="w-full absolute bottom-0 bg-[#F5CDCD] py-6">
+    <footer class="w-full bg-[#F5CDCD] py-6">
+    {{-- <footer class="w-full absolute bottom-0 bg-[#F5CDCD] py-6"> --}}
         <div class="flex flex-row mx-auto">
             <div class="flex-1" id="logo">
                 <img class="h-20" src="./img/Icon-Salmon.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica  logo">
