@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .menu-item{
+        @apply mr-5 ml-5 flex-none text-primary hover:text-secondary hover:underline
+    }
+}
