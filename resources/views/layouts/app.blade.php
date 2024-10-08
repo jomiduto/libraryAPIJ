@@ -10,13 +10,11 @@
     </style>
     @vite('resources/css/app.css')
 </head>
-<body class="min-h-screen flex flex-col p-0 m-0">
-    <header>
-        <div class="container flex flex-row mx-auto">
-            <div class="flex-1" id="logo">
-                <img class="h-20" src="./img/ID-Siglas-Color.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica">
-            </div>
-            <nav class="flex-1">
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <header class="p-4 md:p-6 w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <img class="h-10 md:h-16" src="./img/ID-Siglas-Color.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Jurídica">
+            <nav class="space-x-4">
                 <ul class="flex flex-row h-20 items-center justify-end text-lg text-center mr-6 font-bold font-dm-sans">
                     <li class="menu-item"><a href="https://www.aipjinternacional.com/">Inicio</a></li>
                     <li class="menu-item"><a href="https://www.aipjinternacional.com/quienes-somos">Quiénes somos</a></li>
@@ -28,43 +26,43 @@
         </div>
     </header>
 
-    <div class="container">
+    <main class="max-w-7xl mx-auto p-4 md:p-6 my-8">
         @yield('content')
-    </div>
+    </main>
 
-    <footer class="w-full bg-[#F5CDCD] py-6">
-    {{-- <footer class="w-full absolute bottom-0 bg-[#F5CDCD] py-6"> --}}
-        <div class="flex flex-row mx-auto">
-            <div class="flex-1" id="logo">
-                <img class="h-20" src="./img/Icon-Salmon.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica  logo">
+
+    <!-- Footer -->
+    <footer class="bg-[#F5CDCD] p-6 text-white">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+            <!-- Primera columna -->
+            <div>
+                <img src="./img/Icon-Salmon.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica" class="mb-4 h-16 w-16">
             </div>
-            <div class="flex-1">
-                <ul class="mr-6 h-20">
-                    <li class="font-dm-sans text-lg text-secondary"><a href="https://www.aipjinternacional.com/quienes-somos">Quiénes somos</a></li>
-                    <li class="font-dm-sans text-lg text-secondary"><a href="https://www.aipjinternacional.com/beneficios">Beneficios</a></li>
-                    <li class="font-dm-sans text-lg text-secondary"><a href="https://www.aipjinternacional.com/asociados">Asociados</a></li>
-                    <li class="font-dm-sans text-lg text-secondary"><a href="https://www.aipjinternacional.com/contacto">Contacto</a></li>
-                    <li class="font-dm-sans text-lg text-secondary"><a href="https://www.aipjinternacional.com/eventos">Eventos</a></li>
-                    <li class="font-dm-sans text-lg text-secondary"><a href="#">Blog</a></li>
+            <!-- Segunda columna -->
+            <div>
+                <ul class="space-y-4">
+                    <li><a href="https://www.aipjinternacional.com/quienes-somos" class="text-secondary font-dm-sans text-lg">Quiénes somos</a></li>
+                    <li><a href="https://www.aipjinternacional.com/beneficios" class="text-secondary font-dm-sans text-lg">Beneficios</a></li>
+                    <li><a href="https://www.aipjinternacional.com/asociados" class="text-secondary font-dm-sans text-lg">Asociados</a></li>
+                    <li><a href="https://www.aipjinternacional.com/contacto" class="text-secondary font-dm-sans text-lg">Contacto</a></li>
+                    <li><a href="https://www.aipjinternacional.com/eventos" class="text-secondary font-dm-sans text-lg">Eventos</a></li>
+                    <li><a href="#" class="text-secondary font-dm-sans text-lg">Blog</a></li>
                 </ul>
             </div>
-            <div class="flex-1">
-                <ul class="mr-6 h-20">
-                    <li class="font-dm-sans text-lg text-secondary">Sede central, Madrid</li>
-                    <li class="font-dm-sans text-lg text-secondary">(+54) 900 900 900</li>
-                    <li class="font-dm-sans text-lg text-secondary">info@aipjinternacional</li>
+            <!-- Tercera columna -->
+            <div>
+                <ul class="space-y-4">
+                    <li><a href="#" class="text-secondary font-dm-sans text-lg">Sede central, Madrid</a></li>
+                    <li><a href="#" class="text-secondary font-dm-sans text-lg">(+54) 900 900 900</a></li>
+                    <li><a href="#" class="text-secondary font-dm-sans text-lg">info@aipjinternacional</a></li>
                 </ul>
             </div>
         </div>
-        <!-- Social Media Icons -->
-        <div class="container flex justify-center space-x-6 mt-32">
-            <div class="flex justify-center space-x-6">
-                <a href="#" class="hover:text-gray-400">LinkedIn</a>
-                <a href="#" class="hover:text-gray-400">Instagram</a>
-                <a href="#" class="hover:text-gray-400">Facebook</a>
-            </div>
-            <p class="text-center text-primary font-bold font-dm-sans text-lg">© Todos los derechos reservados</p>
-            <p class="mb-2 text-center text-primary font-dm-sans text-lg">Design by <a href="https://www.nowoo.com.co/" target="blank" class="underline">@nöwoo</a></p>
+
+        <!-- Parte inferior del footer -->
+        <div class="container mx-auto text-center pt-4">
+            <p class="text-primary text-lg font-bold leading-relaxed">&copy; Todos los derechos reservados</p>
+            <p class="text-primary text-lg font-medium">Design by <a href="https://www.nowoo.com.co/" target="_blank" class="underline">@nöwoo</a></p>
         </div>
     </footer>
 </body>
