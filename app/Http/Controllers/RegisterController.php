@@ -28,11 +28,13 @@ class RegisterController extends Controller
             'name' => 'required|min:4|max:100',
             'lastname' => 'required|min:4|max:100',
             'email' => 'required|unique:users|email|max:60',
-            'birthdate' => 'required|date',
+            'birthdate' => 'required|date|before:18 years ago',
             'password' => 'required|confirmed|min:8',
             'country' => 'required',
             'phone' =>  'required',
             'specialization' => 'required'
+        ], [
+            'birthdate.before' => 'Debes ser mayor de edad',
         ]);
 
         // Creación del usuario
