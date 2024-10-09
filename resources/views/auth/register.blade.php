@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Biblioteca AIPJ | Asociación Iberoamericana de Psicología Jurídica')
+@section('title', 'Registro Biblioteca AIPJ | Asociación Iberoamericana de Psicología Jurídica')
 
 @section('content')
     <main class="h-screen w-full">
