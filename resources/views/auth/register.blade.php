@@ -17,7 +17,7 @@
                             <div class="mt-2">
                                 <input type="text" name="name" id="name" placeholder="Nombres" class="form-input" value="{{ old('name') }}">
                                 @error('name')
-                                    <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                    <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                                 @enderror
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                             <div class="mt-2">
                                 <input type="text" name="lastname" id="lastname" placeholder="Apellidos" class="form-input" value="{{ old('lastname') }}">
                                 @error('lastname')
-                                    <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                    <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                                 @enderror
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                         <div class="mt-2">
                             <input id="email" name="email" type="email" placeholder="Correo electrónico" class="form-input" value="{{ old('email') }}">
                             @error('email')
-                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                             @enderror
                         </div>
                       </div>
@@ -46,7 +46,7 @@
                         <div class="mt-2">
                             <input id="birthdate" name="birthdate" type="text" placeholder="Fecha de nacimiento" class="form-input" value="{{ old('birthdate') }}">
                             @error('birthdate')
-                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                             @enderror
                         </div>
                       </div>
@@ -56,7 +56,7 @@
                         <div class="mt-2">
                             <input id="password" name="password" type="password" placeholder="Contraseña" class="form-input" value="{{ old('password') }}">
                             @error('password')
-                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                             @enderror
                         </div>
                       </div>
@@ -66,7 +66,7 @@
                         <div class="mt-2">
                             <input id="password_confirmation" name="password_confirmation" type="password" placeholder="Repite la contraseña" class="form-input" value="{{ old('password_confirmation') }}">
                             @error('password_confirmation')
-                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                             @enderror
                         </div>
                       </div>
@@ -81,7 +81,7 @@
                             <option value="3">Mexico</option>
                           </select>
                             @error('country')
-                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                             @enderror
                         </div>
                       </div>
@@ -91,7 +91,7 @@
                         <div class="mt-2">
                             <input type="number" name="phone" id="phone" placeholder="Teléfono" class="form-input" value="{{ old('phone') }}">
                             @error('phone')
-                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                             @enderror
                         </div>
                       </div>
@@ -106,7 +106,7 @@
                             <option>Laboral</option>
                           </select>
                             @error('specialization')
-                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>
+                                <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center">{{ $message }}</p>
                             @enderror
                         </div>
                       </div>
