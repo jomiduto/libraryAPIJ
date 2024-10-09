@@ -3,8 +3,15 @@
 @section('title', 'Biblioteca AIPJ | Asociación Iberoamericana de Psicología Jurídica')
 
 @section('content')
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-center">
+        <div>
+            <h1 class="font-sora text-primary font-bold text-6xl mb-3">Biblioteca virtual</h1>
+        </div>
+        <div class="flex justify-center md:justify-end">
+            <a href="{{ route('login') }}" class="bg-primary text-text px-4 py-2 rounded">Iniciar sesión</a>
+        </div>
+    </section>
     <section class="mb-8">
-        <h1 class="font-sora text-primary font-bold text-7xl mb-3">Biblioteca virtual</h1>
         <p class="mt-3 font-dm-sans text-secondary text-3xl font-medium tracking-wider">La Dirección Editorial de la AIPJ pone a disposición de sus Asociados Recursos Bibliográficos sobre temáticas variadas, bajo el formato de Trabajos técnico-científicos, direccionados a contribuir:</p>
         <ul class="pt-5 text-2xl text-secondary font-dm-sans font-medium tracking-wider list-disc">
             <li>A un mejor desempeño profesional en el ámbito Jurídico Forense</li>
