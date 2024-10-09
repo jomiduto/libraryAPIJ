@@ -14,48 +14,48 @@
                         <div class="sm:col-span-3">
                             <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Nombres</label>
                             <div class="mt-2">
-                                <input type="text" name="first-name" id="first-name" placeholder="Nombres o Jhon Doe" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6">
+                                <input type="text" name="first-name" id="first-name" placeholder="Nombres o Jhon Doe" class="form-input">
                             </div>
                         </div>
                         <div class="sm:col-span-3">
                             <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Apellidos</label>
                             <div class="mt-2">
-                            <input type="text" name="last-name" id="last-name" placeholder="Apellidos" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            <input type="text" name="last-name" id="last-name" placeholder="Apellidos" class="form-input">
                             </div>
                         </div>
 
                       <div class="sm:col-span-3">
                         <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Correo electrónico</label>
                         <div class="mt-2">
-                          <input id="email" name="email" type="email" placeholder="Correo electrónico" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <input id="email" name="email" type="email" placeholder="Correo electrónico" class="form-input">
                         </div>
                       </div>
 
                       <div class="sm:col-span-3">
                         <label for="birthdate" class="block text-sm font-medium leading-6 text-gray-900">Fecha de nacimiento</label>
                         <div class="mt-2">
-                          <input id="birthdate" name="birthdate" type="date" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <input id="birthdate" name="birthdate" type="date" class="form-input">
                         </div>
                       </div>
 
                       <div class="sm:col-span-3">
                         <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Contraseña</label>
                         <div class="mt-2">
-                          <input id="password" name="password" type="password" placeholder="Contraseña" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <input id="password" name="password" type="password" placeholder="Contraseña" class="form-input">
                         </div>
                       </div>
 
                       <div class="sm:col-span-3">
                         <label for="password_confirmation" class="block text-sm font-medium leading-6 text-gray-900">Repetir contraseña</label>
                         <div class="mt-2">
-                          <input id="password_confirmation" name="password_confirmation" type="password" placeholder="Repite la contraseña" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <input id="password_confirmation" name="password_confirmation" type="password" placeholder="Repite la contraseña" class="form-input">
                         </div>
                       </div>
 
                       <div class="sm:col-span-3">
                         <label for="country" class="block text-sm font-medium leading-6 text-gray-900">País de nacimiento</label>
                         <div class="mt-2">
-                          <select id="country" name="country" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                          <select id="country" name="country" class="form-input">
                             <option>Seleccione</option>
                             <option>United States</option>
                             <option>Canada</option>
@@ -67,14 +67,14 @@
                       <div class="sm:col-span-3">
                         <label for="phone" class="block text-sm font-medium leading-6 text-gray-900">Teléfono</label>
                         <div class="mt-2">
-                          <input type="number" name="phone" id="phone" placeholder="Teléfono" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                          <input type="number" name="phone" id="phone" placeholder="Teléfono" class="form-input">
                         </div>
                       </div>
 
                       <div class="col-span-full">
                         <label for="specialization" class="block text-sm font-medium leading-6 text-gray-900">Especialización</label>
                         <div class="mt-2">
-                          <select id="specialization" name="specialization" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-[#E5E7EB] focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                          <select id="specialization" name="specialization" class="form-input">
                             <option>Seleccione</option>
                             <option>Penal</option>
                             <option>Familiar</option>
