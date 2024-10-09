@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('lastname', length: 100);
             $table->date('birthdate');
-            $table->string('antiquity', length: 10);
-            $table->enum('active_payments', ['1', '0']);
+            $table->string('antiquity', length: 10)->nullable();
+            $table->enum('active_payments', ['1', '0'])->nullable();
             $table->string('specialization', length: 50);
             $table->string('phone', length: 50);
-            $table->enum('status_user', ['1', '0']);
+            $table->enum('status_user', ['1', '0'])->default(1);
         });
     }
 

@@ -75,10 +75,10 @@
                         <label for="country" class="block text-sm font-medium leading-6 text-gray-900">País de nacimiento</label>
                         <div class="mt-2">
                           <select id="country" name="country" class="form-input" value="{{ old('country') }}">
-                            <option>Seleccione</option>
-                            <option>United States</option>
-                            <option>Canada</option>
-                            <option>Mexico</option>
+                            <option value="0">Seleccione</option>
+                            <option value="1">United States</option>
+                            <option value="2">Canada</option>
+                            <option value="3">Mexico</option>
                           </select>
                             @error('country')
                                 <p class="bg-primary text-text my-2 rounded-lg text-sm p-2 text-center">{{ $message }}</p>

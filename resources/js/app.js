@@ -4,5 +4,6 @@ import 'air-datepicker/air-datepicker.css';
 
 new AirDatepicker('#birthdate', {
     locale: localeEs,
-    buttons: ['today', 'clear']
+    buttons: ['today', 'clear'],
+    dateFormat: "yyyy/MM/dd",
 })

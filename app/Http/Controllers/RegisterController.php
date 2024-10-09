@@ -43,7 +43,7 @@ class RegisterController extends Controller
             'email' => $request->email,
             'birthdate' => $request->birthdate,
             'password' => $request->password,
-            'country' => $request->country,
+            'country_id' => $request->country,
             'phone' => $request->phone,
             'specialization' => $request->specialization
         ]);
