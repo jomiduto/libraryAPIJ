@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class RegisterController extends Controller
 {
@@ -16,50 +17,37 @@ class RegisterController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
-    }
+        // dd($request);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
+        // Validación de campos
+        $validated = $request->validate([
+            'name' => 'required|min:4|max:100',
+            'lastname' => 'required|min:4|max:100',
+            'email' => 'required|unique:users|email|max:60',
+            'birthdate' => 'required|date',
+            'password' => 'required|confirmed|min:8',
+            'country' => 'required',
+            'phone' =>  'required',
+            'specialization' => 'required'
+        ]);
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
+        // Creación del usuario
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
+        User::create([
+            'name' => $request->name,
+            'lastname' => $request->lastname,
+            'email' => $request->email,
+            'birthdate' => $request->birthdate,
+            'password' => $request->password,
+            'country' => $request->country,
+            'phone' => $request->phone,
+            'specialization' => $request->specialization
+        ]);
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+
     }
 }

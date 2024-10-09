@@ -8,6 +8,6 @@
     }
 
     .form-input{
-        @apply block w-full rounded-lg border-0 py-1.5 text-[#111827] shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-[#A1A1AA] focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6
+        @apply p-2 block w-full rounded-lg border-0 py-1.5 text-[#111827] shadow-sm ring-1 ring-inset ring-[#E5E7EB] placeholder:text-[#A1A1AA] focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6
     }
 }

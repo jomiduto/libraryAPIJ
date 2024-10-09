@@ -9,6 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap');
     </style>
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <header class="p-4 md:p-6 w-full sticky top-0 z-50 shadow-lg bg-text">
