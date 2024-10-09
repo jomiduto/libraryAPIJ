@@ -11,7 +11,7 @@
     @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <header class="p-4 md:p-6 w-full">
+    <header class="p-4 md:p-6 w-full sticky top-0 z-50 shadow-lg bg-text">
         <div class="container mx-auto flex justify-between items-center">
             <img class="h-10 md:h-16" src="./img/ID-Siglas-Color.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Jurídica">
             <nav class="space-x-4">
