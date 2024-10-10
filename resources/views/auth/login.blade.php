@@ -24,7 +24,7 @@
                     <div class="sm:col-span-3 mb-4">
                         <label for="password" class="block text-sm font-medium leading-6 text-gray-900 font-dm-sans">Contraseña</label>
                         <div class="mt-2">
-                            <input id="password" name="password" type="password" placeholder="Contraseña" class="form-input" value="{{ old('password') }}">
+                            <input id="password" name="password" type="password" placeholder="Contraseña" class="form-input">
                             @error('password')
                                 <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center font-dm-sansgit">{{ $message }}</p>
                             @enderror
