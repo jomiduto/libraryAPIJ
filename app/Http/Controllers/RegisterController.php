@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Country;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,7 +14,10 @@ class RegisterController extends Controller
      */
     public function index()
     {
-        return view('auth.register');
+        $countries = Country::orderBy('country', 'ASC')->get();
+
+        return view('auth.register', compact('countries'));
+
     }
 
     /**
@@ -30,11 +34,12 @@ class RegisterController extends Controller
             'email' => 'required|unique:users|email|max:60',
             'birthdate' => 'required|date|before:18 years ago',
             'password' => 'required|confirmed|min:8',
-            'country' => 'required',
+            'country' => 'required|exists:countries,country',
             'phone' =>  'required',
             'specialization' => 'required'
         ], [
             'birthdate.before' => 'Debes ser mayor de edad',
+            'country.exists' => 'Debes seleccionar una opción'
         ]);
 
         // Creación del usuario
