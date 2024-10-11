@@ -16,7 +16,7 @@ return new class extends Migration
             $table->date('birthdate');
             $table->string('antiquity', length: 10)->nullable();
             $table->enum('active_payments', ['1', '0'])->nullable();
-            $table->integer('specialization')->default(1);
+            $table->integer('specialization');
             $table->string('phone', length: 50);
             $table->enum('status_user', ['1', '0'])->default(1);
         });

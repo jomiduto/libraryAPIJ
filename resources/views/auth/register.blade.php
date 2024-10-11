@@ -100,10 +100,10 @@
                         <label for="specialization" class="block text-sm font-medium leading-6 text-gray-900 font-dm-sans">Especialización</label>
                         <div class="mt-2">
                           <select id="specialization" name="specialization" class="form-input" value="{{ old('specialization') }}">
-                            <option>Seleccione</option>
-                            <option>Penal</option>
-                            <option>Familiar</option>
-                            <option>Laboral</option>
+                            <option value="0">Seleccione</option>
+                            @foreach ($specializations as $specialization)
+                                <option value="{{ $specialization->id }}">{{ $specialization->specializations }}</option>
+                            @endforeach
                           </select>
                             @error('specialization')
                                 <p class="bg-primary text-text my-2 rounded-lg text-sm p-1 text-center font-dm-sans">{{ $message }}</p>

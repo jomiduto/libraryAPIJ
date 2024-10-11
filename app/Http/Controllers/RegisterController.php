@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Country;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Specialization;
 
 class RegisterController extends Controller
 {
@@ -15,8 +16,9 @@ class RegisterController extends Controller
     public function index()
     {
         $countries = Country::orderBy('country', 'ASC')->get();
+        $specializations = Specialization::orderBy('specializations', 'ASC')->get();
 
-        return view('auth.register', compact('countries'));
+        return view('auth.register', compact('countries', 'specializations'));
 
     }
 
@@ -36,10 +38,10 @@ class RegisterController extends Controller
             'password' => 'required|confirmed|min:8',
             'country' => 'required|exists:countries,country',
             'phone' =>  'required',
-            'specialization' => 'required'
+            'specialization' => 'required|exists:specializations,specializations'
         ], [
             'birthdate.before' => 'Debes ser mayor de edad',
-            'country.exists' => 'Debes seleccionar una opción'
+            //'country.exists' => 'Debes seleccionar una opción',
         ]);
 
         // Creación del usuario
