@@ -7,9 +7,11 @@
         <div>
             <h1 class="font-sora text-primary font-bold text-6xl mb-3">Biblioteca virtual</h1>
         </div>
-        <div class="flex justify-center md:justify-end">
-            <a href="{{ route('login') }}" class="bg-primary text-text px-4 py-2 rounded">Iniciar sesión</a>
-        </div>
+        @guest
+            <div class="flex justify-center md:justify-end">
+                <a href="{{ route('login') }}" class="bg-primary text-text px-4 py-2 rounded">Iniciar sesión</a>
+            </div>
+        @endguest
     </section>
     <section class="mb-8">
         <p class="mt-3 font-dm-sans text-secondary text-3xl font-medium tracking-wider">La Dirección Editorial de la AIPJ pone a disposición de sus Asociados Recursos Bibliográficos sobre temáticas variadas, bajo el formato de Trabajos técnico-científicos, direccionados a contribuir:</p>

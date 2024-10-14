@@ -22,6 +22,15 @@
                     <li class="menu-item"><a href="https://www.aipjinternacional.com/eventos">Eventos</a></li>
                     <li class="menu-item"><a href="https://www.aipjinternacional.com/asociados">Asociados</a></li>
                     <li class="menu-item"><a href="https://www.aipjinternacional.com/contacto">Contacto</a></li>
+                    @auth
+                        <li class="menu-item">Contacto</li>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="font-bold uppercase text-gray-600 text-sm">
+                                Cerrar sesión
+                            </button>
+                        </form>
+                    @endauth
                 </ul>
             </nav>
         </div>
