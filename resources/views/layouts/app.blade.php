@@ -11,7 +11,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="leading-normal tracking-normal">
     <header class="p-4 md:p-6 w-full sticky top-0 z-50 shadow-lg bg-text">
         <div class="container mx-auto flex justify-between items-center">
             <img class="h-10 md:h-16" src="./img/ID-Siglas-Color.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Jurídica">
@@ -36,8 +36,8 @@
     <footer class="bg-[#F5CDCD] p-6 text-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
             <!-- Primera columna -->
-            <div>
-                <img src="./img/ID-Vertical-Salmon.png" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica" class="mb-4 h-16 w-16">
+            <div class="w-[40%]">
+                <img src="./img/ID-Vertical-Salmon.png" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica" class="object-cover w-full h-full row-span-full col-span-full">
             </div>
             <!-- Segunda columna -->
             <div>

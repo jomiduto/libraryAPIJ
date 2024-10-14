@@ -3,7 +3,7 @@
 @section('title', 'Iniciar Sesión Biblioteca AIPJ | Asociación Iberoamericana de Psicología Jurídica')
 
 @section('content')
-    <main class="h-screen w-full">
+    <main class="w-full">
         <section>
             <div class="flex flex-col items-center justify-center">
                 <form class="w-5/12 mt-6 border-solid border-2 border-text rounded p-8 shadow-2xl" method="POST" action="{{ route('login') }}" novalidate autocomplete="off">

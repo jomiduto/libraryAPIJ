@@ -3,7 +3,7 @@
 @section('title', 'Registro Biblioteca AIPJ | Asociación Iberoamericana de Psicología Jurídica')
 
 @section('content')
-    <main class="h-screen w-full">
+    <main class="w-full">
         <section>
             <div class="flex flex-col items-center justify-center">
                 <form class="w-6/12 mt-6 border-solid border-2 border-text rounded p-8 shadow-2xl" method="POST" action="{{ route('register') }}" novalidate autocomplete="off">
@@ -11,7 +11,7 @@
                     <h1 class="font-sora text-primary font-bold text-5xl mb-5 text-center">Regístrate</h1>
                     <p class=" font-dm-sans mt-1 text-sm leading-6 text-gray-600 text-center">Completa los siguientes datos y accede a nuestros beneficios.</p>
 
-                    
+
 
                     <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                         <div class="sm:col-span-3">
