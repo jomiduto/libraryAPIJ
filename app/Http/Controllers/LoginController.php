@@ -26,10 +26,10 @@ class LoginController extends Controller
         ]);
 
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password'), 'status_user' => 1])) {
             $request->session()->regenerate();
 
-            // return redirect()->route('posts.index', auth()->user()->username );
+            // return redirect()->route('dashboard.index', auth()->user()->name );
             return redirect()->route('dashboard.index');
         }
 

@@ -15,4 +15,4 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']);
 
-Route::get('/dashboard', [HomeController::class], 'index')->name('dashboard.index');
+Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard.index');

@@ -58,6 +58,6 @@ class RegisterController extends Controller
         ]);
 
         // Redireccionar
-        return redirect()->route('login');
+        return redirect('login')->with('success', 'Registration successful! Please log in.');
     }
 }

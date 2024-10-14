@@ -16,8 +16,10 @@ class HomeController extends Controller implements HasMiddleware
         ];
     }
 
-    public function index()
+    public function index(User $user)
     {
-        return view('dashboard');
+        return view('dashboard', [
+            'user' => $user
+        ]);
     }
 }
