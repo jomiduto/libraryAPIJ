@@ -14,10 +14,10 @@ class SpecializationsSeeder extends Seeder
     public function run(): void
     {
         $specializations = [
-            ['specializations' => 'Penal'],
-            ['specializations' => 'Laboral'],
-            ['specializations' => 'Familiar'],
-            ['specializations' => 'Ambiental']
+            ['specializations' => 'Psicología Forense'],
+            ['specializations' => 'Psicología Penitenciaria'],
+            ['specializations' => 'Psicología de la Investigación Criminal'],
+            ['specializations' => 'Psicología de la Victimización Criminal']
         ];
 
         DB::table('specializations')->insert($specializations);

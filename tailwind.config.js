@@ -5,7 +5,9 @@ export default {
     "./resources/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+        'img-ninez': "url('./img/categories/niñez-adolecencia.png')",
+    },
     fontFamily: {
         'dm-sans': 'DM Sans',
         'sora': 'Sora',

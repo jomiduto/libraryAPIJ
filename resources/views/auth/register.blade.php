@@ -11,6 +11,8 @@
                     <h1 class="font-sora text-primary font-bold text-5xl mb-5 text-center">Regístrate</h1>
                     <p class=" font-dm-sans mt-1 text-sm leading-6 text-gray-600 text-center">Completa los siguientes datos y accede a nuestros beneficios.</p>
 
+                    
+
                     <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                         <div class="sm:col-span-3">
                             <label for="name" class="block text-sm font-medium leading-6 text-gray-900 font-dm-sans">Nombres</label>
@@ -97,9 +99,9 @@
                       </div>
 
                       <div class="col-span-full">
-                        <label for="specialization" class="block text-sm font-medium leading-6 text-gray-900 font-dm-sans">Especialización</label>
+                        <label for="specialization_id" class="block text-sm font-medium leading-6 text-gray-900 font-dm-sans">Área de Especialización</label>
                         <div class="mt-2">
-                          <select id="specialization" name="specialization" class="form-input" value="{{ old('specialization') }}">
+                          <select id="specialization_id" name="specialization_id" class="form-input" value="{{ old('specialization_id') }}">
                             <option value="0">Seleccione</option>
                             @foreach ($specializations as $specialization)
                                 <option value="{{ $specialization->id }}">{{ $specialization->specializations }}</option>

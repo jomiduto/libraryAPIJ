@@ -37,7 +37,7 @@
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
             <!-- Primera columna -->
             <div>
-                <img src="./img/Icon-Salmon.jpg" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica" class="mb-4 h-16 w-16">
+                <img src="./img/ID-Vertical-Salmon.png" alt="AIPJ Asociacion Iberoamericana de Psicologia Juridica" class="mb-4 h-16 w-16">
             </div>
             <!-- Segunda columna -->
             <div>

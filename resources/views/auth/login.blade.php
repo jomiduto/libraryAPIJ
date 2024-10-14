@@ -8,8 +8,7 @@
             <div class="flex flex-col items-center justify-center">
                 <form class="w-5/12 mt-6 border-solid border-2 border-text rounded p-8 shadow-2xl" method="POST" action="{{ route('login') }}" novalidate autocomplete="off">
                     @csrf
-                    <h1 class="font-sora text-primary font-bold text-5xl mb-5 text-center">Iniciar Sesión</h1>
-                    <p class="mt-1 text-sm leading-6 text-gray-600 text-center font-dm-sans">Acá va una imagen</p>
+                    <h1 class="font-sora text-primary font-bold text-5xl mb-8 text-center">Iniciar Sesión</h1>
 
                     <div class="sm:col-span-3 mb-4">
                         <label for="email" class="block text-sm font-medium leading-6 text-gray-900 font-dm-sans">Correo electrónico</label>

@@ -19,21 +19,82 @@
             <li>A unificar criterios de intervención interdisciplinar éticamente responsables</li>
         </ul>
     </section>
+    <div class=" mb-12">
+        <h1 class="text-[48px] font-bold text-primary font-sora">Temas de Interés</h1>
+        <p class="font-dm-sans text-primary text-lg">2024</p>
+    </div>
+    {{-- <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="relative p-6 h-[426px] w-[350px] object-cover">
+            <h6 class="text-xl font-semibold font-sora mb-2">Civil</h6>
+            <img src="./img/categories/Civil.png" alt="Civil" class="rounded-[20px] object-cover">
+            <a href="#" class="bg-primary text-text px-4 py-2 rounded">Ver más</a>
+        </div>
+        <div class="p-6">
+            <h6 class="text-xl font-semibold font-sora mb-2">Niñez y Adolenscensia</h6>
+            <img src="./img/categories/Niñez-Adolecencia.png" alt="Civil" class="rounded-2xl object-cover">
+            <a href="#" class="bg-primary text-text px-4 py-2 rounded">Ver más</a>
+        </div>
+        <div class="p-6">
+            <h6 class="text-xl font-semibold font-sora mb-2">Familias</h6>
+            <img src="./img/categories/Familias.png" alt="Civil" class="rounded-2xl object-cover">
+            <a href="#" class="bg-primary text-text px-4 py-2 rounded">Ver más</a>
+        </div>
+        <div class="p-6">
+            <h6 class="text-xl font-semibold font-sora mb-2">Violencia Familiar y de Género</h6>
+            <img src="./img/categories/Violencia-familiar-genero.png" alt="Civil" class="rounded-2xl object-cover">
+            <a href="#" class="bg-primary text-text px-4 py-2 rounded">Ver más</a>
+        </div>
+    </section> --}}
+    <!-- Grid de tarjetas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Tarjeta 1 -->
+        <div class="relative grid grid-rows-[auto_1fr_auto] rounded-lg overflow-hidden w-[350px] h-5/6">
+            <!-- Imagen de fondo -->
+            <img src="./img/categories/civil.png" alt="Civil" class="max-w-full object-cover w-full h-full row-span-full col-span-full">
 
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Sección 1</h3>
-            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- Contenido superpuesto -->
+            <div class="absolute inset-0 flex flex-col justify-between p-4">
+                <!-- Título -->
+                <h2 class="text-text font-bold text-xl font-sora row-start-1">Civil</h2>
+                <!-- Botón -->
+                <a href="#" class="bg-primary text-lg text-text font-bold tracking-wider font-dm-sans py-2 px-4 text-center rounded-lg hover:bg-[#F5CDCD] row-start-3 place-self-start">
+                    Ver más
+                </a>
+            </div>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Sección 2</h3>
-            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <!-- Tarjeta 2 -->
+        <div class="relative grid grid-rows-[auto_1fr_auto] rounded-lg overflow-hidden w-[350px] h-5/6">
+            <!-- Imagen de fondo -->
+            <img src="./img/categories/familias.png" alt="Familias" class="max-w-full object-cover w-full h-full row-span-full col-span-full">
+
+            <!-- Contenido superpuesto -->
+            <div class="absolute inset-0 flex flex-col justify-between p-4">
+                <!-- Título -->
+                <h2 class="text-text font-bold text-xl font-sora row-start-1">Familias</h2>
+                <!-- Botón -->
+                <a href="#" class="bg-primary text-lg text-text font-bold tracking-wider font-dm-sans py-2 px-4 text-center rounded-lg hover:bg-[#F5CDCD] row-start-3 place-self-start">
+                    Ver más
+                </a>
+            </div>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold mb-2">Sección 3</h3>
-            <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <!-- Tarjeta 3 -->
+        <div class="relative grid grid-rows-[auto_1fr_auto] rounded-lg overflow-hidden w-[350px] h-5/6">
+            <!-- Imagen de fondo -->
+            <img src="./img/categories/niñez-adolecencia.png" alt="Niñez y Adolescencia" class="max-w-full object-cover w-full h-full row-span-full col-span-full">
+
+            <!-- Contenido superpuesto -->
+            <div class="absolute inset-0 flex flex-col justify-between p-4">
+                <!-- Título -->
+                <h2 class="text-text font-bold text-xl font-sora row-start-1">Niñez y Adolescencia</h2>
+                <!-- Botón -->
+                <a href="#" class="bg-primary text-lg text-text font-bold tracking-wider font-dm-sans py-2 px-4 text-center rounded-lg hover:bg-[#F5CDCD] row-start-3 place-self-start">
+                    Ver más
+                </a>
+            </div>
         </div>
-    </section>
+    </div>
 @endsection
 
 @section('footer')

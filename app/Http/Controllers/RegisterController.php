@@ -36,9 +36,9 @@ class RegisterController extends Controller
             'email' => 'required|unique:users|email|max:60',
             'birthdate' => 'required|date|before:18 years ago',
             'password' => 'required|confirmed|min:8',
-            'country' => 'required|exists:countries,country',
+            'country' => 'required|exists:countries,id',
             'phone' =>  'required',
-            'specialization' => 'required|exists:specializations,specializations'
+            'specialization_id' => 'required|exists:specializations,id'
         ], [
             'birthdate.before' => 'Debes ser mayor de edad',
             //'country.exists' => 'Debes seleccionar una opción',
@@ -54,9 +54,10 @@ class RegisterController extends Controller
             'password' => $request->password,
             'country_id' => $request->country,
             'phone' => $request->phone,
-            'specialization' => $request->specialization
+            'specialization_id' => $request->specialization_id
         ]);
 
-
+        // Redireccionar
+        return redirect()->route('login');
     }
 }
