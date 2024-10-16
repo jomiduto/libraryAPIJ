@@ -8,12 +8,12 @@
         <h1 class="font-sora text-primary font-bold text-6xl mb-3">Biblioteca virtual</h1>
     </div>
     @guest
-        <div class="flex justify-center md:justify-end">
+        <div class="flex justify-center md:justify-center">
             <a href="{{ route('login') }}" class="bg-primary text-text font-dm-sans text-lg px-4 py-2 rounded">Iniciar sesión</a>
         </div>
     @endguest
     @auth
-        <div class="flex justify-center md:justify-end">
+        <div class="flex justify-center md:justify-center">
             <a href="#" class="bg-primary text-text font-dm-sans text-lg px-4 py-2 rounded">Gestión de Contenidos</a>
         </div>
     @endauth
