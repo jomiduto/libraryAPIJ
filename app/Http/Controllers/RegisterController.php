@@ -31,33 +31,35 @@ class RegisterController extends Controller
 
         // Validación de campos
         $validated = $request->validate([
-            'name' => 'required|min:4|max:100',
-            'lastname' => 'required|min:4|max:100',
+            'nombre' => 'required|min:4|max:100|',
+            'apellido' => 'required|min:4|max:100',
             'email' => 'required|unique:users|email|max:60',
-            'birthdate' => 'required|date|before:18 years ago',
+            'fecha_nacimiento' => 'required|date|before:18 years ago',
             'password' => 'required|confirmed|min:8',
-            'country' => 'required|exists:countries,id',
-            'phone' =>  'required',
-            'specialization_id' => 'required|exists:specializations,id'
+            'pais' => 'required|exists:countries,id',
+            'telefono' =>  'required|',
+            'especializacion' => 'required|exists:specializations,id'
         ], [
-            'birthdate.before' => 'Debes ser mayor de edad',
+            'fecha_nacimiento.before' => 'Debes ser mayor de edad',
             //'country.exists' => 'Debes seleccionar una opción',
         ]);
 
         // Creación del usuario
 
         User::create([
-            'name' => $request->name,
-            'lastname' => $request->lastname,
+            'name' => $request->nombre,
+            'lastname' => $request->apellido,
             'email' => $request->email,
-            'birthdate' => $request->birthdate,
+            'birthdate' => $request->fecha_nacimiento,
             'password' => $request->password,
-            'country_id' => $request->country,
-            'phone' => $request->phone,
-            'specialization_id' => $request->specialization_id
+            'country_id' => $request->pais,
+            'phone' => $request->telefono,
+            'specialization_id' => $request->especializacion
         ]);
 
+        session()->flash('success', 'Te has registrado correctamente');
+
         // Redireccionar
-        return redirect('login')->with('success', 'Registration successful! Please log in.');
+        return redirect('login');
     }
 }

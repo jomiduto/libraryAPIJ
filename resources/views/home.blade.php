@@ -9,7 +9,7 @@
         </div>
         @guest
             <div class="flex justify-center md:justify-end">
-                <a href="{{ route('login') }}" class="bg-primary text-text px-4 py-2 rounded">Iniciar sesión</a>
+                <a href="{{ route('login') }}" class="bg-primary text-text font-dm-sans text-lg px-4 py-2 rounded">Iniciar sesión</a>
             </div>
         @endguest
     </section>

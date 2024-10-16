@@ -20,13 +20,26 @@ class CountriesSeeder extends Seeder
         //     'status_country' => '1',
         // ]);
         $countries = [
-            ['country' => 'México', 'callsign' => '52'],
-            ['country' => 'Brasil', 'callsign' => '55'],
             ['country' => 'Argentina', 'callsign' => '54'],
+            ['country' => 'Bolivia', 'callsign' => '591'],
+            ['country' => 'Brasil', 'callsign' => '55'],
+            ['country' => 'Chile', 'callsign' => '56'],
             ['country' => 'Colombia', 'callsign' => '57'],
+            ['country' => 'Costa Rica', 'callsign' => '506'],
+            ['country' => 'Cuba', 'callsign' => '53'],
+            ['country' => 'Ecuador', 'callsign' => '593'],
+            ['country' => 'El Salvador', 'callsign' => '503'],
             ['country' => 'España', 'callsign' => '34'],
-            ['country' => 'Francia', 'callsign' => '33'],
-            ['country' => 'Ecuador', 'callsign' => '593']
+            ['country' => 'Guatemala', 'callsign' => '502'],
+            ['country' => 'México', 'callsign' => '52'],
+            ['country' => 'Nicaragua', 'callsign' => '505'],
+            ['country' => 'Panamá', 'callsign' => '507'],
+            ['country' => 'Paraguay', 'callsign' => '595'],
+            ['country' => 'Perú', 'callsign' => '51'],
+            ['country' => 'Portugal', 'callsign' => '351'],
+            ['country' => 'Puerto Rico', 'callsign' => '787'],
+            ['country' => 'Uruguay', 'callsign' => '598'],
+            ['country' => 'Venezuela', 'callsign' => '58'],
         ];
 
         DB::table('countries')->insert($countries);

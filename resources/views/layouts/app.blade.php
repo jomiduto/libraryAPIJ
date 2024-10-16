@@ -8,6 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap');
     </style>
+    @stack('styles')
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>
@@ -23,13 +24,39 @@
                     <li class="menu-item"><a href="https://www.aipjinternacional.com/asociados">Asociados</a></li>
                     <li class="menu-item"><a href="https://www.aipjinternacional.com/contacto">Contacto</a></li>
                     @auth
-                        <li class="menu-item">Contacto</li>
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <button type="submit" class="font-bold uppercase text-gray-600 text-sm">
-                                Cerrar sesión
-                            </button>
-                        </form>
+                        <div class="grid w-full place-items-center overflow-hidden rounded-lg p-6">
+                            <img id="dropdownButton" class="relative inline-block h-10 w-10 cursor-pointer rounde-full object-cover object-center" src="./img/user.png" alt="icon-user-login">
+                            <!-- Dropdown menu -->
+                            <div id="dropdownMenu" class="z-10 hidden bg-text divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-text dark:divide-gray-600">
+                                <ul class="absolute z-10 min-w-[180px] overflow-auto rounded-lg bg-text p-1.5 shadow-lg focus:outline-none" aria-labelledby="dropdownDividerButton">
+                                    <li class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100">
+                                        <a href="#" class="block p-1 font-dm-sans text-secondary">¡Hola, {{ auth()->user()->name }}!</a>
+                                    </li>
+                                    <li class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100">
+                                        {{-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-slate-400">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
+                                        </svg> --}}
+                                        <a href="#" class="block p-1 font-dm-sans text-secondary">Mi Perfil</a>
+                                    </li>
+                                    <li class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100">
+                                        <a href="#" class="block p-1 font-dm-sans text-secondary">Usuarios</a>
+                                    </li>
+                                    <li class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100">
+                                        <a href="#" class="block p-1 font-dm-sans text-secondary">Contenidos</a>
+                                    </li>
+                                    <hr class="text-[#E5E7EB]">
+                                    <li class="cursor-pointer text-slate-800 flex w-full text-sm items-center rounded-md p-3 transition-all hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100">
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <a class="block p-1 font-dm-sans text-secondary text-lg text-sm">
+                                                Cerrar sesión
+                                            </a>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     @endauth
                 </ul>
             </nav>
@@ -75,5 +102,28 @@
             <p class="text-primary text-lg font-medium">Design by <a href="https://www.nowoo.com.co/" target="_blank" class="underline">@nöwoo</a></p>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/d446d71118.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script>
+
+        // Toggle dropdown visibility
+        document.getElementById('dropdownButton').addEventListener('click', function() {
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownMenu.classList.toggle('hidden');
+        });
+
+        // Close the dropdown when clicking outside
+        window.addEventListener('click', function(e) {
+            const dropdownButton = document.getElementById('dropdownButton');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
+    </script>
+
 </body>
 </html>

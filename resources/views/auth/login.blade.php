@@ -4,6 +4,11 @@
 
 @section('content')
     <main class="w-full">
+        @if(session('success'))
+            <script>
+                alert("{{ session('success') }}");
+            </script>
+        @endif
         <section>
             <div class="flex flex-col items-center justify-center">
                 <form class="w-5/12 mt-6 border-solid border-2 border-text rounded p-8 shadow-2xl" method="POST" action="{{ route('login') }}" novalidate autocomplete="off">
