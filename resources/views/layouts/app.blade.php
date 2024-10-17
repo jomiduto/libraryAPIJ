@@ -8,9 +8,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap');
     </style>
+
+    <link rel="shortcut icon" type="image/png" href="{{ asset('./img/icon-color.png') }}">
+    <link rel="shortcut icon" sizes="192x192" href="{{ asset('./img/icon-color.png') }}">
+
     @stack('styles')
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
+    @stack('script-toogle')
 </head>
 <body class="leading-normal tracking-normal">
     <header class="p-4 md:p-6 w-full sticky top-0 z-50 shadow-lg bg-text">
@@ -45,9 +50,9 @@
                                     <form method="POST" action="{{ route('logout') }}">
                                         <li class="flex">
                                             @csrf
-                                            <a class="block cursor-pointer text-secondary font-dm-sans w-full text-sm rounded-md p-3 transition-all hover:bg-primary hover:text-text focus:bg-primary active:bg-primary">
+                                            <button class="block cursor-pointer text-secondary font-dm-sans w-full text-sm rounded-md p-3 transition-all hover:bg-primary hover:text-text focus:bg-primary active:bg-primary">
                                                 Cerrar sesión
-                                            </a>
+                                            </button>
                                         </form>
                                     </li>
                                 </ul>

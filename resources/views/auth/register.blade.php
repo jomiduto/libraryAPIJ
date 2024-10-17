@@ -144,6 +144,10 @@
         </section>
     </main>
 @endsection
+<script>
+
+</script>
+@push('script-toogle')
 
 <script>
     const eyeIcons = {
@@ -179,5 +183,6 @@
 
     document.addEventListener("DOMContentLoaded", addListeners);
 </script>
+@endpush
 
 @section('footer')
