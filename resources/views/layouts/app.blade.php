@@ -9,8 +9,8 @@
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap');
     </style>
 
-    <link rel="shortcut icon" type="image/png" href="{{ asset('./img/icon-color.png') }}">
-    <link rel="shortcut icon" sizes="192x192" href="{{ asset('./img/icon-color.png') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('./img/favicon.png') }}">
+    <link rel="shortcut icon" sizes="192x192" href="{{ asset('./img/favicon.png') }}">
 
     @stack('styles')
     @vite('resources/css/app.css')

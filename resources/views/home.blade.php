@@ -52,7 +52,7 @@
         <!-- Tarjeta 1 -->
         <div class="relative grid grid-rows-[auto_1fr_auto] rounded-lg overflow-hidden w-[350px] h-5/6">
             <!-- Imagen de fondo -->
-            <img src="./img/categories/civil.png" alt="Civil" class="max-w-full object-cover w-full h-full row-span-full col-span-full">
+            <img src="./img/categories/civil.png" alt="Civil" class="max-w-full object-cover w-full h-full row-span-full col-span-full filter opacity-70">
 
             <!-- Contenido superpuesto -->
             <div class="absolute inset-0 flex flex-col justify-between p-4">
