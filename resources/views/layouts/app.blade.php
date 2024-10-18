@@ -44,7 +44,7 @@
                                         <a href="#" class="block cursor-pointer text-secondary font-dm-sans w-full text-sm rounded-md p-3 transition-all hover:bg-primary hover:text-text focus:bg-primary active:bg-primary">Usuarios</a>
                                     </li>
                                     <li class="flex">
-                                        <a href="#" class="block cursor-pointer text-secondary font-dm-sans w-full text-sm rounded-md p-3 transition-all hover:bg-primary hover:text-text focus:bg-primary active:bg-primary">Contenidos</a>
+                                        <a href="{{ route('contents.index') }}" class="block cursor-pointer text-secondary font-dm-sans w-full text-sm rounded-md p-3 transition-all hover:bg-primary hover:text-text focus:bg-primary active:bg-primary">Contenidos</a>
                                     </li>
                                     <hr class="text-[#E5E7EB]">
                                     <form method="POST" action="{{ route('logout') }}">

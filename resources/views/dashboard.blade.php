@@ -14,7 +14,7 @@
     @endguest
     @auth
         <div class="flex justify-center md:justify-center">
-            <a href="#" class="bg-primary text-text font-dm-sans text-lg px-4 py-2 rounded">Gestión de Contenidos</a>
+            <a href="{{ route('contents.index') }}" class="bg-primary text-text font-dm-sans text-lg px-4 py-2 rounded">Gestión de Contenidos</a>
         </div>
     @endauth
 </section>
