@@ -2,11 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controllers\HasMiddleware;
 
-class PostController extends Controller
+class PostController extends Controller implements HasMiddleware
 {
+    public static function middleware(): array
+    {
+        return[
+            'auth',
+        ];
+    }
+
     /**
      * Display a listing of the resource.
      */
@@ -20,7 +28,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('contents.create-content');
     }
 
     /**

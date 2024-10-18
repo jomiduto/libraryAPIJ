@@ -5,10 +5,11 @@
 @section('content')
     <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-center">
         <div>
-            <h1 class="font-sora text-primary font-bold text-6xl mb-3">Biblioteca virtual</h1>
+            <h1 class="font-sora text-primary font-bold text-6xl mb-3">Contenidos</h1>
+            <span class="font-dm-sans text-secondary text-lg">Aquí podrás gestionar y administrar los contenidos de la biblioteca virtual</span>
         </div>
         <div class="flex justify-center md:justify-center">
-            <a href="{{ route('login') }}" class="bg-primary text-text font-dm-sans text-lg px-4 py-2 rounded">Cargar contenido</a>
+            <a href="{{ route('contents.create') }}" class="bg-primary text-text font-dm-sans text-lg px-4 py-2 rounded">Cargar contenido</a>
         </div>
     </section>
     <section class="<section class="mb-8"></section>

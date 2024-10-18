@@ -22,3 +22,4 @@ Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard.index');
 
 Route::get('/contents', [PostController::class, 'index'])->name('contents.index');
+Route::get('/create_content', [PostController::class, 'create'])->name('contents.create');
